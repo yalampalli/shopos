@@ -8,7 +8,7 @@ interface WorkflowTileProps {
     icon: React.ElementType;
 }
 
-export const WorkflowTile = memo(({ tag, title, description, icon }: WorkflowTileProps) => {
+const WorkflowTile = memo(({ tag, title, description, icon }: WorkflowTileProps) => {
     return (
         <div className="bg-white rounded-xl overflow-hidden border border-gray-200 p-6 flex flex-col h-full">
             <div className="w-10 h-10 text-gray-700">
@@ -32,4 +32,8 @@ export const WorkflowTile = memo(({ tag, title, description, icon }: WorkflowTil
             </div>
         </div>
     );
-}); 
+});
+
+WorkflowTile.displayName = 'WorkflowTile';
+
+export default WorkflowTile; 

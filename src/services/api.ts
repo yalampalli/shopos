@@ -34,7 +34,7 @@ export const api = {
         }
     },
 
-    getStore: async (id: string): Promise<ApiResponse<Store>> => {
+    getStore: async (): Promise<ApiResponse<Store>> => {
         try {
             const store: Store = {
                 name: "Test Store",

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 interface Product {
     image: string;
     name: string;
@@ -66,10 +68,12 @@ export const ProductTable = () => {
                             <tr key={index} className="bg-white">
                                 <td className="px-6 py-4">
                                     <div className="h-20 w-20 rounded-lg overflow-hidden">
-                                        <img
+                                        <Image
                                             src={product.image}
                                             alt={product.name}
-                                            className="h-full w-full object-cover"
+                                            width={100}  // adjust as needed
+                                            height={100} // adjust as needed
+                                            priority={index < 4} // for images above the fold
                                         />
                                     </div>
                                 </td>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from 'react';
-import { WorkflowTile } from '../molecules/WorkflowTile';
+import WorkflowTile from '../molecules/WorkflowTile';
 import { WorkflowFilters } from '../molecules/WorkflowFilters';
 import { useFilter } from '@/hooks/useFilter';
 import { workflows } from '@/data/workflows';
